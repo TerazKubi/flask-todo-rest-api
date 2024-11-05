@@ -1,0 +1,24 @@
+python -m venv env
+
+./env/Scripts/activate
+
+/env/Scripts/activate
+
+pip install -r requirements.txt
+
+python create_db.py
+
+python run.py
+
+ENDPOINTS:
+GET /api/todos
+GET /api/todos/<int:id>
+POST /api/todos/<int:id>
+    example body
+    {
+        "title": "Flask Task",
+        "description": "Create Flask RESTful API",
+        "done": true
+    }
+DELETE /api/todos/<int:id>
+PUT /api/todos/<int:id>
